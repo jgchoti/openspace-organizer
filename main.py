@@ -16,17 +16,17 @@ def main() -> None:
     except:
         raise ValueError("Unsupported file format. Use .csv")
     
-    user_name = input("Please enter your name : ")
-    if user_name in names_list:
+    user_name = input("Please enter your name : ").lower()
+    if user_name in [name.lower() for name in names_list]:
         print(f"Hi, {user_name}! Your name is already on the list.")
     else:
         names_list.append(user_name)
         print(f"Welcome {user_name}, your name has been added to the list.")
     
     number_participant = len(names_list)
-    print("🚀🪑 Launching Openspace Organizer... ")
-    print("👋🏽 Welcome!", names_list)
-    print(f"🤹 There are {number_participant} people. Let's get organize (randomly)")
+    print(f"🚀🪑 Launching Openspace Organizer... \n")
+    print("🙌 Welcome!", ', '.join(names_list))
+    print(f"🤹 There are {number_participant} people. Let's get organize (randomly)\n")
     # - Launch the organizer. Display the results  
     openspace = Openspace(number_of_tables=6, table_capacity=4)
     # Organize seating
