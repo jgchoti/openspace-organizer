@@ -35,6 +35,8 @@ Table 5: Capacity of 4 | Occupants: [Seat 1: Marc, Seat 2: Megan, Seat 3: Emmanu
 Table 6: Capacity of 4 | Occupants: [Seat 1: Floriane, Seat 2: Choti, Seat 3: Dragos, Seat 4: Hanieh]
 ```
 
+3. You can save  the seating arrangement into csv file in the root folder.
+
 ## 👥 Contributors
 
 - [Choti](https://github.com/jgchoti)
