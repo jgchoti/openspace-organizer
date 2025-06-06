@@ -4,7 +4,7 @@
 
 - This Python program helps teams randomly assign people to seats across tables in an open space
 - This program is perfect for daily rotations, team-building, and getting to know colleagues better.
-- This program reads names from an Excel file and randomly assigns them to available seats across tables.
+- This program reads names from an CSV file and randomly assigns them to available seats across tables.
 - We aim to built using **Object-Oriented Programming**, the project is modular, readable, and easy to extend.
 
 ## ⚙️ Installation
