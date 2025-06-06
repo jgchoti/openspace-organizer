@@ -7,7 +7,25 @@
 # In `table.py`:
 
 # Create a class called `Seat` with two attributes:
+class Seat:
+    def __init__(self):
+        self.free = True
+        self.occupant = ""
 
+    def set_occupant(self, name):
+        if self.free:
+            self.occupant = name
+            self.free = False
+            return True
+        return False
+
+    def remove_occupant(self):
+        if not self.free:
+            occupant_name = self.occupant
+            self.occupant = ""
+            self.free = True
+            return occupant_name
+        return None
 # - `free` which is a boolean.
 # - `occupant` which is a string.
 
