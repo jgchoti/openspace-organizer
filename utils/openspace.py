@@ -15,16 +15,6 @@ class Openspace():
         random.shuffle(names_list) # Shuffle people
         total_seats = self.tables[0].capacity * self.number_of_tables 
         
-        if len(names_list) > total_seats:
-            print(f"⚠️ Not enough seats for everyone. {len(names_list) - total_seats} people won't get a seat.")
-            user_prompt = input("Do you want to add another table? (yes/no): ").lower().strip()
-            if user_prompt in ("yes", "y"):
-                self.add_table(4)
-                print("➕ Added new table. Reorganizing seats...🔃")
-                self.organize(names_list)  # call to reorganize with new table(s)
-            else:
-                print(f"🚫 No additional table added.")
-        
         all_seats = []
         for table in self.tables:
             all_seats.extend(table.seats) # single list of every seat from all tables.
