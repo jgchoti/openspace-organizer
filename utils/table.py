@@ -17,6 +17,8 @@ class Seat:
             self.free = True
             return occupant_name
         return None
+    def __str__(self):
+        return self.occupant or "Empty"
 
 class Table:
     def __init__(self, capacity):
@@ -34,3 +36,8 @@ class Table:
 
     def left_capacity(self):
         return sum(1 for seat in self.seats if seat.free)
+    
+    def __str__(self):
+        occupants = ', '.join(f"Seat {i+1}: {seat}" for i, seat in enumerate(self.seats))
+        return f"Capacity of {self.capacity} | Occupants: [{occupants}]" 
+    

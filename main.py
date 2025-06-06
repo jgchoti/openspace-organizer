@@ -33,6 +33,8 @@ def main() -> None:
     openspace.organize(names_list)
     # Display seating
     openspace.display()
+    #store the file
+    openspace.storefile()
     
 if __name__ == "__main__":
     main()
