@@ -1,54 +1,5 @@
-# 2. An openspace
-
-# In `openspace.py` create a class `Openspace` that contains these attributes:
-
-# - `tables` which is a list of `Table`. _(you will need to import `Table` from `table.py`)_. 
-# - `number_of_tables` which is an integer.
-
-# And some methods:
-
-# - `organize(names)` that will:
-#   - **randomly** assign people to `Seat` objects in the different `Table` objects.
-# - `display()` display the different tables and there occupants in a nice and readable way
-# - `store(filename)` store the repartition in an excel file
 import random
 # from .table import Table
-class Table:
-    def __init__(self, capacity):
-        self.capacity = capacity
-        self.seats = [Seat() for _ in range(capacity)]
-
-    def __str__(self):
-        occupants = ', '.join(f"Seat {i+1}: {seat}" for i, seat in enumerate(self.seats))
-        return f"Capacity of {self.capacity} | Occupants: [{occupants}]" 
-    
-    def assign_seat(self, name: str) -> bool:
-        for seat in self.seats:
-            if seat.set_occupant(name):
-                return True
-        return False
-class Seat:
-    def __init__(self):
-        self.free: bool = True
-        self.occupant: str = None
-
-    def set_occupant(self, name: str) -> bool:
-        if self.free:
-            self.occupant = name
-            self.free = False
-            return True
-        return False
-
-    def remove_occupant(self) -> str:
-        if not self.free:
-            name = self.occupant
-            self.occupant = None
-            self.free = True
-            return name
-        return None
-
-    def __str__(self):
-        return self.occupant or "Empty"
 
 class Openspace():  
     def __init__(self, number_of_tables: int , table_capacity: int):
