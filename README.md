@@ -1,5 +1,4 @@
 # Openspace Organizer
-<<<<<<< HEAD
 
 ## 💬 Description
 
@@ -34,14 +33,3 @@ python main.py
 ## 💬 Personal Situation
 
 This project was part of an assignment for the BeCode Data/AI program. The one-day challenge strengthened our skills in Python OOP and team collaboration.
-=======
-edit
-<!--
-   - Description
-   - Installation
-   - Usage
-   - (Visuals)
-   - (Contributors)
-   - (Timeline)
-   - (Personal situation) -->
->>>>>>> origin/test
