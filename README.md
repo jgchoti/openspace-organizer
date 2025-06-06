@@ -25,6 +25,16 @@ python main.py
 
 2. You will see a clean output of table assignments in your terminal.
 
+```
+📋 Seating Arrangement:
+Table 1: Capacity of 4 | Occupants: [Seat 1: Evi, Seat 2: Charly, Seat 3: Nadiya, Seat 4: Alberto]
+Table 2: Capacity of 4 | Occupants: [Seat 1: Augustin, Seat 2: Hajer, Seat 3: Kenny, Seat 4: Preeti]
+Table 3: Capacity of 4 | Occupants: [Seat 1: Aida, Seat 2: Moussa, Seat 3: Mengstu, Seat 4: Klebert]
+Table 4: Capacity of 4 | Occupants: [Seat 1: Caterina, Seat 2: Yassine, Seat 3: Fang, Seat 4: Sofia]
+Table 5: Capacity of 4 | Occupants: [Seat 1: Marc, Seat 2: Megan, Seat 3: Emmanuel, Seat 4: Yves]
+Table 6: Capacity of 4 | Occupants: [Seat 1: Floriane, Seat 2: Choti, Seat 3: Dragos, Seat 4: Hanieh]
+```
+
 ## 👥 Contributors
 
 - [Choti](https://github.com/jgchoti)
