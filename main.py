@@ -18,14 +18,12 @@ def main() -> None:
     print("🚀🪑 Launching Openspace Organizer... ")
     print("👋🏽 Welcome!", names_list)
     print(f"🤹 There are {number_participant} people. Let's get organize (randomly)")
-    
     # - Launch the organizer. Display the results  
     openspace = Openspace(number_of_tables=6, table_capacity=4)
     # Organize seating
     openspace.organize(names_list)
     # Display seating
     openspace.display()
-
 if __name__ == "__main__":
     main()
 
